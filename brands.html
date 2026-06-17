@@ -111,7 +111,7 @@
               Click thumbnail → centered video viewer slides over the page → plays inline.
               The viewer markup + JS is at the bottom of this file.
             -->
-            <img src="https://img.youtube.com/vi/P1HtBDzj9-Y/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/P1HtBDzj9-Y/hqdefault.jpg"
                  alt="Aciq HVAC video — J and L HVAC"
                  style="width:100%; height:100%; object-fit:cover; display:block;"
                  onerror="this.src='https://img.youtube.com/vi/P1HtBDzj9-Y/hqdefault.jpg'">
@@ -134,7 +134,7 @@
           <div id="tempstar-video"
                style="border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 16/9; background: #000; box-shadow: var(--shadow-md); position: relative; cursor: pointer;"
                onclick="openVideoViewer('f2Cx7CCV7pM')">
-            <img src="https://img.youtube.com/vi/f2Cx7CCV7pM/maxresdefault.jpg"
+            <img src="https://img.youtube.com/vi/f2Cx7CCV7pM/hqdefault.jpg"
                  alt="Tempstar V-Coil with Power-V Technology Product Video — J and L HVAC"
                  style="width:100%; height:100%; object-fit:cover; display:block;"
                  onerror="this.src='https://img.youtube.com/vi/f2Cx7CCV7pM/hqdefault.jpg'">
@@ -245,7 +245,7 @@
   function openVideoViewer(id) {
     const v = document.getElementById('video-viewer');
     const slot = document.getElementById('video-viewer-slot');
-    slot.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' + id + '?autoplay=1&rel=0&modestbranding=1&playsinline=1" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block; border:0; width:100%; height:100%;"></iframe>';
+    slot.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/' + id + '?rel=0&modestbranding=1&playsinline=1" title="Video" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display:block; border:0; width:100%; height:100%;"></iframe>';
     v.style.display = 'flex';
     document.body.style.overflow = 'hidden';
   }
